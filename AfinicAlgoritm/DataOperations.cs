@@ -104,7 +104,7 @@ namespace AfinicAlgoritm
             return data;
         }
 
-        internal static Data FindInvertMod(Data data)
+        private static Data FindInvertMod(Data data)
         {
             data.InvertMod = -1;
             for (int i = 1; i < data.Mod + 1; i++)
@@ -123,7 +123,7 @@ namespace AfinicAlgoritm
             return data;
         }
 
-        internal static Data ReverseTranscription(Data data)
+        private static Data ReverseTranscription(Data data)
         {
             data.TransIntAlphabet = new int[data.IntAlphabet.Length];
 
@@ -146,7 +146,7 @@ namespace AfinicAlgoritm
             return data;
         }
 
-        internal static void ShowDecription(Data data)
+        internal static void ShowDecriptedData(Data data)
         {
             data = FindInvertMod(data);
             data = KeyWordToCharTab(data);
@@ -156,7 +156,7 @@ namespace AfinicAlgoritm
             EndDecription(data);
         }
 
-        internal static void EndDecription(Data data)
+        private static void EndDecription(Data data)
         {
             Console.WriteLine("Wiadomość po odszyfrowaniu");
             Console.WriteLine(data.CharTab);

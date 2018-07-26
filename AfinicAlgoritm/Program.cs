@@ -26,7 +26,7 @@ namespace AfinicAlgoritm
                     if (DataOperations.CheckIsInvertAble(data).IsInvertAble)
                     {
                         DataOperations.Decription(data);
-                        DataOperations.ShowDecription(data);
+                        DataOperations.ShowDecriptedData(data);
                     }
                     else
                     {
@@ -39,7 +39,5 @@ namespace AfinicAlgoritm
                 }
             } while (control!=0);
         }
-
-        
     }
 }
